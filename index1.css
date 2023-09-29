@@ -1,0 +1,21 @@
+body{
+    background-color:rgb(135, 250, 162);
+    border:3px solid navy;
+}
+h1,h2{
+    text-align: center;
+text-overflow: inherit;
+    color:red;
+}
+
+p{
+    background-color: aqua;
+    text-indent: initial;
+    font-size: 20px;
+    font-style: italic;
+    border:2px solid black;
+ 
+}
+span{
+color:red;
+}

@@ -1,0 +1,75 @@
+body{
+    background-color:lightblue;
+}
+h3{
+    color: red;
+    word-spacing: 20px;
+   
+    text-align: center;
+}
+
+#apple
+{
+    margin-top: 90px;
+    margin-left: 440px;
+}
+
+#ball
+{
+    margin-left: 440px;
+}
+
+#cat
+{
+    margin-left: 440px;
+}
+#dog
+{
+    margin-left: 440px; 
+}
+#egg
+{
+    margin-left: 440px;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+#same{
+    padding: 20px;
+    width: 300px;
+    margin:10px;
+    border:none;
+    background-color: lightgrey;
+    
+}
+#some{
+    padding: 20px;
+    width: 300px;
+    margin: 10px; 
+    border:none; 
+    background-color: lightgrey;
+}
+
+#big{
+    padding: 20px;
+    background-color: orange;
+   color: white;
+    text-align: center;
+    width: 200px;
+    margin: 20px;
+    border:none;
+
+
+}
+div{
+    text-align: center;
+    background-color: white;
+    width: 500px;
+    padding:2px;
+   
+}
+span{
+    color: orange;
+}

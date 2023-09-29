@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" href="projectcalculator.css" />
+    </head>
+    <body>
+        <h1>CALCULATOR</h1>
+        <div id="main">
+            <div id="contents">
+                
+               
+                <p id="result"></p>
+
+                <div id="first">
+                    <button onclick="insert(1)">1</button>
+                    <button onclick="insert(2)">2</button>
+                    <button onclick="insert(3)">3</button>
+                  <button  onclick="insert('+')"><span>+</span></button> 
+                </div>
+                
+                <div id="second">
+                    <button onclick="insert(4)">4</button>
+                    <button onclick="insert(5)">5</button>
+                    <button onclick="insert(6)">6</button>
+                    <button onclick="insert('-')"> <span>-</span></button>
+                </div>
+               
+                <div id="third">
+                    <button onclick="insert(7)">7</button>
+                    <button onclick="insert(8)">8</button>
+                    <button onclick="insert(9)">9</button>
+                    <button onclick="insert('*')"> <span>*</span></button>
+                </div>
+    
+                <div id="four">
+                    <button onclick="insert(0)">0</button>
+                    <button onclick="clearval()"> <span>C</span></button>
+                    <button onclick="calculate()"> <span>=</span></button>
+                    <button onclick="insert('/')"> <span>/</span></button>
+                </div>  
+
+                <script>
+                    var res='';
+                        
+                function insert(val){
+                    document.getElementById('result').innerHTML+=val;
+                }
+                function clearval()
+                {
+                    document.getElementById('result').innerHTML='';
+                }
+
+                function calculate(){
+                  res= document.getElementById("result").innerHTML;
+                    if(res.indexOf('+')!=-1){
+                    let a=res.split('+');
+                   let b= Number(a[0])+Number(a[1]);
+                   document.getElementById("result").innerHTML=  document.getElementById("result").innerHTML + "=" +b;
+                }
+                if(res.indexOf('-')!=-1){
+                    let a=res.split('-');
+                   let b= Number(a[0])-Number(a[1]);
+                   document.getElementById("result").innerHTML+="=" +b;
+                }
+                if(res.indexOf('*')!=-1){
+                    let a=res.split('*');
+                   let b= Number(a[0])*Number(a[1]);
+                   document.getElementById("result").innerHTML+="=" +b;
+                }
+                if(res.indexOf('/')!=-1){
+                    let a=res.split('/');
+                   let b= Number(a[0])/Number(a[1]);
+                   document.getElementById("result").innerHTML+="=" +b;
+                }
+            }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
